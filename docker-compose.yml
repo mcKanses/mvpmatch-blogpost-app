@@ -13,3 +13,5 @@ services:
       dockerfile: .docker/backend.Dockerfile
     ports:
       - 8000:8000
+    volumes:
+      - ./backend:/mvp-blogpost-app
