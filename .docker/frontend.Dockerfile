@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY frontend/package.json .
 
-RUN npm i -y
+RUN npm i
 
 COPY frontend/. .
 
-CMD [ "npm", "start" ]
+CMD npm start
