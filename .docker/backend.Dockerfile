@@ -1,6 +1,6 @@
 FROM node:18-slim
 
-WORKDIR /mvp-blogpost-app
+WORKDIR /app
 
 COPY backend/package.json .
 
