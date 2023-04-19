@@ -4,6 +4,7 @@ services:
     build:
       context: .
       dockerfile: .docker/frontend.Dockerfile
+    container_name: mvp-blogpost-app-frontend
     ports:
       - 3000:3000
 
@@ -11,6 +12,7 @@ services:
     build:
       context: .
       dockerfile: .docker/backend.Dockerfile
+    container_name: mvp-blogpost-app-backend
     ports:
       - 8000:8000
     volumes:
