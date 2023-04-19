@@ -1,3 +1,11 @@
 FROM node:18-slim
 
-CMD [ "tail", "-F", "anything" ]
+WORKDIR /app
+
+COPY frontend/package.json .
+
+RUN npm i -y
+
+COPY frontend/. .
+
+CMD [ "npm", "start" ]
