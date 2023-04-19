@@ -5,6 +5,8 @@ services:
       context: .
       dockerfile: .docker/frontend.Dockerfile
     container_name: mvp-blogpost-app-frontend
+    environment:
+      - WATCHPACK_POLLING=true
     hostname: mvp-blogpost-app-frontend
     ports:
       - 3000:3000
