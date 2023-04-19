@@ -8,6 +8,9 @@ services:
     hostname: mvp-blogpost-app-frontend
     ports:
       - 3000:3000
+    volumes:
+      - ./frontend/:/app
+      - /app/node_modules
 
   backend:
     build:
@@ -21,3 +24,4 @@ services:
       - 8000:8000
     volumes:
       - ./backend:/app
+      - /app/node_modules
