@@ -18,4 +18,4 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - ./backend:/$BACKEND_SERVICE_NAME
+      - ./backend:/app
