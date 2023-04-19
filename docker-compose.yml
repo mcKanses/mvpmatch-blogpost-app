@@ -14,6 +14,8 @@ services:
       context: .
       dockerfile: .docker/backend.Dockerfile
     container_name: $BACKEND_SERVICE_NAME
+    environment:
+      - CHOKIDAR_USEPOLLING=true
     hostname: $BACKEND_SERVICE_NAME
     ports:
       - 8000:8000
