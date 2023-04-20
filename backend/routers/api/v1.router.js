@@ -1,9 +1,9 @@
 import { Router } from 'express'
 
-import blogpostsRouter from './v1/blogposts.router.js'
+import postsRouter from './v1/posts.router.js'
 
 const v1Router = Router()
 
-v1Router.use('/blogposts', blogpostsRouter)
+v1Router.use('/posts', postsRouter)
 
 export default v1Router
