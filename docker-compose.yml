@@ -4,10 +4,10 @@ services:
     build:
       context: .
       dockerfile: .docker/frontend.Dockerfile
-    container_name: mvp-blogpost-app-frontend
+    container_name: $FRONTEND_SERVICE_NAME
     environment:
       - WATCHPACK_POLLING=true
-    hostname: mvp-blogpost-app-frontend
+    hostname: $FRONTEND_SERVICE_NAME
     ports:
       - 3000:3000
     tty: true
