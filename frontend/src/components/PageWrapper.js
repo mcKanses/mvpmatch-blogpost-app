@@ -1,15 +1,17 @@
 import { useRoutes } from 'react-router-dom'
 
-import FormNewPost from '../pages/FormNewPost'
+import NewPost from '../pages/NewPost'
 import PageHeader from './PageHeader'
+import PostDetails from '../pages/PostDetails'
 
 const PageWrapper = () => {
   return (
     <>
       <PageHeader />
       {useRoutes([
-        {path: '/create-post', element: <FormNewPost /> },
-        { path: '*', element: <div>ERROR</div> },
+        { path: '/create-post', element: <NewPost /> },
+        { path: '/posts/:id', element: <PostDetails />},
+        { path: '*', element: <h2>🤔 Where do you think you were going?</h2> },
       ])}
     </>
   )
