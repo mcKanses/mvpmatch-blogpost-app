@@ -3,9 +3,9 @@ import Home from '../pages/Home'
 
 const PageHeader = () => {
   return (
-    <nav>
+    <nav id='nav-bar'>
       <ul>
-        <li><Link to="/">←</Link></li>
+        <li><Link to="/">← back home</Link></li>
       </ul>
     </nav>
   )
