@@ -15,4 +15,4 @@ docker compose up -d
 </pre>
 
 The backend service will run on port 8000. The frontend service will run on port 3000.  
-So then just open [http://localhost:3000](http://localhost:3000) in your browser.
+To try the app, just open [http://localhost:3000](http://localhost:3000) in your browser.
